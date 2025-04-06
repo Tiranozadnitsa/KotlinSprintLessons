@@ -12,6 +12,7 @@ fun main() {
 
     verticalStartPosition = 2
     horizontalStartPosition = 'D'
+
     verticalFinalPosition = verticalStartPosition + 1
     horizontalFinalPosition = horizontalStartPosition
     moveNumber++
