@@ -5,9 +5,10 @@ fun main() {
     var crystallineOre: Int = 7
     var ironOre: Int = 11
 
-    var bonusCrystallineOre: Int = (crystallineOre.toDouble() * ((100+buff.toFloat())/100) - crystallineOre).toInt()
-    var bonusIronOre: Int = (ironOre.toDouble() * ((100+buff.toFloat())/100) - ironOre).toInt()
+    var coeffBuff: Double = (100 + buff.toDouble()) / 100
+    var bonusCrystallineOre: Int = (crystallineOre * coeffBuff - crystallineOre).toInt()
+    var bonusIronOre: Int = (ironOre * coeffBuff - ironOre).toInt()
 
-            println("Количество бонусной кристаллической руды: $bonusCrystallineOre")
-            println("Количество бонусной железной руды: $bonusIronOre")
+    println("Количество бонусной кристаллической руды: $bonusCrystallineOre")
+    println("Количество бонусной железной руды: $bonusIronOre")
 }
